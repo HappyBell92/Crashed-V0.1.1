@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Orientationcheck : MonoBehaviour
 {
-    public Vector2 turn;
+    private Vector2 turn;
     // Start is called before the first frame update
     void Start()
     {

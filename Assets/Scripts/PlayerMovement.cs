@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (SteepSlope())
         {
-            rb.AddForce(Vector3.down * 80f, ForceMode.Force);
+            rb.AddForce(-transform.up * 150f, ForceMode.Force);
         }
 
 
@@ -252,9 +252,10 @@ public class PlayerMovement : MonoBehaviour
 
     private bool OnSlope()
     {
-        if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.4f))
+        if (Physics.Raycast(transform.position, -transform.up, out slopeHit, playerHeight * 0.5f + 0.4f))
         {
-            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            Debug.Log("I am on a slope!");
+            float angle = Vector3.Angle(transform.up, slopeHit.normal);
             return angle < maxSlopeAngle && angle != 0;
         }
 
@@ -263,9 +264,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool SteepSlope()
     {
-        if (Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.5f))
+        if (Physics.Raycast(transform.position, -transform.up, out slopeHit, playerHeight * 0.5f + 0.5f))
         {
-            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            float angle = Vector3.Angle(transform.up, slopeHit.normal);
             return angle > steepSlopeAngle && angle != 0;
         }
 
