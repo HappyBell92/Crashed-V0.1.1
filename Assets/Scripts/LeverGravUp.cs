@@ -13,6 +13,7 @@ public class LeverGravUp : MonoBehaviour, IInteractable
     public bool Interact(Interactor interactor)
     {
         gravityBehaviourScript.GravityUp();
+        gravityBehaviourScript.RotateUp();
         return true;
     }
 

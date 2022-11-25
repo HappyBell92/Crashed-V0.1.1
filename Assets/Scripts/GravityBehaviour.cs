@@ -8,15 +8,27 @@ public class GravityBehaviour : MonoBehaviour
 
     //public float rotationSpeed = 10f;
 
-    //Transform from;
-    //Transform to;
+    public Transform from;
+    public Transform to;
 
-    //float speed = 0.01f;
-    //float timeCount = 0.0f;
+    float speed = 1f;
+    float timeCount = 0.0f;
 
     void Start()
     {
+        
+    }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.G))
+        {
+            GravityUp();
+            RotateUp();
+        }
+
+        //player.transform.rotation = Quaternion.Slerp(from.rotation, to.rotation, timeCount);
+        //timeCount = timeCount + Time.deltaTime;
     }
 
     public void GravityDown()
@@ -30,7 +42,14 @@ public class GravityBehaviour : MonoBehaviour
     {
         Debug.Log("Gravity Up!");
         Physics.gravity = new Vector3(0, 9.81f, 0);
-        player.transform.rotation = Quaternion.Euler(180, 0, 0);
+        //player.transform.rotation = Quaternion.Euler(180, 0, 0);
+        
+    }
+
+    public void RotateUp()
+    {
+        player.transform.rotation = Quaternion.Slerp(from.rotation, to.rotation, timeCount);
+        timeCount = timeCount + Time.deltaTime;
     }
 
     public void GravityNorth()

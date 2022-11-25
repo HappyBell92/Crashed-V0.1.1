@@ -97,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (SteepSlope())
         {
+            Debug.Log("Too Steep!");
             rb.AddForce(-transform.up * 150f, ForceMode.Force);
         }
 
