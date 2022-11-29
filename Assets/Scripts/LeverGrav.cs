@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeverGravUp : MonoBehaviour, IInteractable
+public class LeverGrav : MonoBehaviour, IInteractable
 {
     [SerializeField] private string prompt;
+    [SerializeField] string GravityCardinalDirection;
 
     public GravityBehaviour gravityBehaviourScript;
 
@@ -12,7 +13,7 @@ public class LeverGravUp : MonoBehaviour, IInteractable
 
     public bool Interact(Interactor interactor)
     {
-        gravityBehaviourScript.GravityUp();
+        gravityBehaviourScript.SwitchGravity(GravityCardinalDirection);
         return true;
     }
 

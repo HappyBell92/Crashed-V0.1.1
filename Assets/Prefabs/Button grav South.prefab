@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2700497238517386377}
   - component: {fileID: 2700497238517386382}
   - component: {fileID: 2700497238517386383}
-  - component: {fileID: 2700497238517386380}
+  - component: {fileID: 7099263868021495186}
   m_Layer: 7
   m_Name: Button grav South
   m_TagString: Untagged
@@ -98,7 +98,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2700497238517386380
+--- !u!114 &7099263868021495186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,8 +107,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2700497238517386381}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ba9235417e29e4e8227b9ddff885ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 76996a48f6c8a7b49a99f165e5d68dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prompt: 
+  GravityCardinalDirection: South
   gravityBehaviourScript: {fileID: 0}

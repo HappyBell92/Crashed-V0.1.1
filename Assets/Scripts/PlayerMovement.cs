@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (SteepSlope())
         {
-            Debug.Log("Too Steep!");
+            //Debug.Log("Too Steep!");
             rb.AddForce(-transform.up * 150f, ForceMode.Force);
         }
 
@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
         // Mode - sprinting
         if(grounded && Input.GetKey(sprintKey))
         {
-            Debug.Log("Sprinting");
+            //Debug.Log("Sprinting");
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
         }
@@ -255,7 +255,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, -transform.up, out slopeHit, playerHeight * 0.5f + 0.4f))
         {
-            Debug.Log("I am on a slope!");
+            //Debug.Log("I am on a slope!");
             float angle = Vector3.Angle(transform.up, slopeHit.normal);
             return angle < maxSlopeAngle && angle != 0;
         }
