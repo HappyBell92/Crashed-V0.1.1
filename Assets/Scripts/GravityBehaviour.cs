@@ -18,7 +18,6 @@ public class GravityBehaviour : MonoBehaviour
 	public Transform west;
 
 	public float speed = 0.25f;
-	public float timePassedWait = 1f;
 	public float gravityScale = 9.81f;
 	float timeCount = 0.0f;
 
@@ -65,17 +64,35 @@ public class GravityBehaviour : MonoBehaviour
 		}
 	}
 
-	IEnumerator RotatePlayer(Vector3 gravityDirection, Quaternion endRotation)
-	{
-		Physics.gravity = gravityDirection * gravityScale;
-		float timeCount = 0f;
+    IEnumerator RotatePlayer(Vector3 gravityDirection, Quaternion endRotation)
+    {
+        Physics.gravity = gravityDirection * gravityScale;
+        float timeCount = 0f;
 
-		while (timeCount < 1f)
-		{
-			player.transform.rotation = Quaternion.Slerp(fromRotation, endRotation, timeCount);
-			timeCount = timeCount + Time.deltaTime;
+        while (timeCount < 1f)
+        {
+            player.transform.rotation = Quaternion.Slerp(fromRotation, endRotation, Mathf.Clamp(timeCount, 0f, 1f));
+            timeCount += Time.deltaTime * speed;
 
-			yield return null;
-		}
-	}
+            yield return null;
+        }
+        if (timeCount >= 1f)
+        {
+            player.transform.rotation = endRotation;
+        }
+    }
+
+    //IEnumerator RotatePlayer(Vector3 gravityDirection, Quaternion endRotation)
+    //{
+    //	Physics.gravity = gravityDirection * gravityScale;
+    //	float timeCount = 0f;
+
+    //	while (timeCount < 1f)
+    //	{
+    //		player.transform.rotation = Quaternion.Slerp(fromRotation, endRotation, timeCount);
+    //		timeCount = timeCount + Time.deltaTime;
+
+    //		yield return null;
+    //	}
+    //}
 }
