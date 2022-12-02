@@ -140,7 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092c766830755524bbb91c21d655723a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turn: {x: 0, y: 0}
 --- !u!1 &3979229515697886737
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6568718123550322082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13, y: 0.76, z: 0.029999986}
+  m_LocalPosition: {x: 0.13000488, y: 0.7600064, z: 0.02999878}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -541,7 +540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7091970214591821176}
   m_LocalRotation: {x: 0.07373585, y: 0.6301807, z: -0.060299657, w: 0.77058375}
-  m_LocalPosition: {x: 0.13, y: 0.76, z: 0.029999986}
+  m_LocalPosition: {x: 0.13000488, y: 0.7600064, z: 0.02999878}
   m_LocalScale: {x: 1, y: 1.1111112, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -715,6 +714,7 @@ GameObject:
   - component: {fileID: 1147425171}
   - component: {fileID: 1147425175}
   - component: {fileID: 1147425177}
+  - component: {fileID: 2004064236}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -773,6 +773,7 @@ MonoBehaviour:
   sprintSpeed: 9
   rotationSpeed: 400
   groundDrag: 6
+  gorundCheck: 0.3
   jumpForce: 12
   jumpCooldown: 0.25
   airMultiplier: 0.4
@@ -833,3 +834,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8589181673455547505}
+  fromRotation: {x: 0, y: 0, z: 0, w: 0}
+  from: {fileID: 0}
+  up: {fileID: 0}
+  down: {fileID: 0}
+  north: {fileID: 0}
+  south: {fileID: 0}
+  east: {fileID: 0}
+  west: {fileID: 0}
+  speed: 1.5
+  gravityScale: 9.81
+--- !u!114 &2004064236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589181673455547505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e07263e6f356124fa87391165fef857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnPoint: {x: 46.24, y: 0.76, z: -0.13}
