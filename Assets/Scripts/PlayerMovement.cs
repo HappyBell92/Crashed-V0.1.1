@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     
 
     public float groundDrag;
+    public float gorundCheck = 0.3f;
 
     public float jumpForce;
     public float jumpCooldown;
@@ -81,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Ground Check
-        grounded = Physics.Raycast(transform.position, -transform.up, playerHeight * 0.5f + 0.2f, WhatIsGround);
+        grounded = Physics.Raycast(transform.position, -transform.up, playerHeight * 0.5f + gorundCheck, WhatIsGround);
         Debug.DrawRay(transform.position, -transform.up, Color.green, Time.deltaTime);
 
         MyInput();
