@@ -7,7 +7,7 @@ public class ScatterGate : MonoBehaviour
     SkinnedMeshRenderer meshRenderer;
     bool start;
     public float blend;
-    public float blendSpeed;
+    public float blendSpeed = 0.3f;
     AudioSource shatter;
     private void Start()
     {

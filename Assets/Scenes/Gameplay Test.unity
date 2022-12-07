@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 262.38354, g: 325.1084, b: 430.30957, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5275,108 +5275,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772072247}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &774340513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5126548237896794604, guid: 8a6b5eb21c8d98b4ca316d00fce7a16d,
-    type: 3}
-  m_PrefabInstance: {fileID: 5126548236713713644}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &774340519
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774340513}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 56700edec647c474991eccee4755443b, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &780843239
 GameObject:
   m_ObjectHideFlags: 0
@@ -15786,11 +15684,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2196958507635646347, guid: ed5549bc65fac6b47a3b6b4a902c42b3,
-        type: 3}
-      propertyPath: gravityBehaviourScript
-      value: 
-      objectReference: {fileID: 1147425177}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed5549bc65fac6b47a3b6b4a902c42b3, type: 3}
 --- !u!1001 &2623505017706857701
@@ -15828,6 +15721,16 @@ PrefabInstance:
       propertyPath: south
       value: 
       objectReference: {fileID: 725065479}
+    - target: {fileID: 3468892145924131098, guid: 3e01c607a8bbd4b4bbd92d917e8650fa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.13002396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3468892145924131098, guid: 3e01c607a8bbd4b4bbd92d917e8650fa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02998352
+      objectReference: {fileID: 0}
     - target: {fileID: 3903808112152820111, guid: 3e01c607a8bbd4b4bbd92d917e8650fa,
         type: 3}
       propertyPath: m_RootOrder
@@ -15882,6 +15785,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454771777637331263, guid: 3e01c607a8bbd4b4bbd92d917e8650fa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.13002396
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454771777637331263, guid: 3e01c607a8bbd4b4bbd92d917e8650fa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02998352
       objectReference: {fileID: 0}
     - target: {fileID: 8589181673455547505, guid: 3e01c607a8bbd4b4bbd92d917e8650fa,
         type: 3}
@@ -16105,11 +16018,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5126548237896794601, guid: 8a6b5eb21c8d98b4ca316d00fce7a16d,
-        type: 3}
-      propertyPath: gravityBehaviourScript
-      value: 
-      objectReference: {fileID: 1147425177}
     - target: {fileID: 5126548237896794604, guid: 8a6b5eb21c8d98b4ca316d00fce7a16d,
         type: 3}
       propertyPath: m_Name
@@ -16129,11 +16037,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button grav East
       objectReference: {fileID: 0}
-    - target: {fileID: 5332530586367496233, guid: 6abbd99fb6bc22b44b47926b55158ff8,
-        type: 3}
-      propertyPath: gravityBehaviourScript
-      value: 
-      objectReference: {fileID: 1147425177}
     - target: {fileID: 5332530586367496237, guid: 6abbd99fb6bc22b44b47926b55158ff8,
         type: 3}
       propertyPath: m_RootOrder
@@ -16194,8 +16097,7 @@ PrefabInstance:
       propertyPath: gravityBehaviourScript
       value: 
       objectReference: {fileID: 1147425177}
-    m_RemovedComponents:
-    - {fileID: 5332530586367496233, guid: 6abbd99fb6bc22b44b47926b55158ff8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6abbd99fb6bc22b44b47926b55158ff8, type: 3}
 --- !u!1001 &5788896411103402319
 PrefabInstance:
@@ -16205,11 +16107,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2178991981340957620, guid: d5f7b4637a5033d4abdfe94976f340fc,
-        type: 3}
-      propertyPath: gravityBehaviourScript
-      value: 
-      objectReference: {fileID: 1147425177}
-    - target: {fileID: 5788896411271863478, guid: d5f7b4637a5033d4abdfe94976f340fc,
         type: 3}
       propertyPath: gravityBehaviourScript
       value: 
