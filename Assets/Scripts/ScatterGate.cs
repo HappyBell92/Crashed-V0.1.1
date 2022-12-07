@@ -6,11 +6,13 @@ public class ScatterGate : MonoBehaviour
 {
     SkinnedMeshRenderer meshRenderer;
     bool start;
-    float blend;
+    public float blend;
     public float blendSpeed;
+    AudioSource shatter;
     private void Start()
     {
         meshRenderer = this.GetComponent<SkinnedMeshRenderer>();
+        shatter = GetComponent<AudioSource>();
     }
     //Trigger
     private void OnTriggerEnter(Collider other)
@@ -19,27 +21,30 @@ public class ScatterGate : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             start = true;
+            shatter.time = shatter.clip.length;
+            shatter.pitch = 1;
+            shatter.Play();
         }
     }
+
     private void Update()
     {
-
-        if (!start)
-        {
-            if (blend >= 0f)
-            {
-                meshRenderer.SetBlendShapeWeight(0, blend);
-                blend -= blendSpeed;
-            }
-
-        }
         if (start)
         {
-            if (blend <= 100f)
+            if (blend <= 100)
             {
-                meshRenderer.SetBlendShapeWeight(0, blend);
                 blend += blendSpeed;
+                meshRenderer.SetBlendShapeWeight(0, Mathf.Clamp(blend, 0f, 100f));
             }
+        }
+        if (!start)
+        {
+            if (blend >= 0)
+            {
+                blend -= blendSpeed;
+                meshRenderer.SetBlendShapeWeight(0, Mathf.Clamp(blend, 0, 100));
+            }
+
         }
     }
     private void OnTriggerExit(Collider other)
@@ -47,6 +52,9 @@ public class ScatterGate : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             start = false;
+            shatter.pitch = -1;
+            shatter.time = shatter.clip.length - 0.01f;
+            shatter.Play();
         }
 
     }
