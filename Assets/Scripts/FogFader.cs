@@ -47,7 +47,8 @@ public class FogFader : MonoBehaviour
         while (fadeTime < 1f)
         {
             Mathf.Clamp(fadeTime, 0f, 1f);
-            fadeTime + -Time.deltaTime * fadespeed;
+            fadeTime += -Time.deltaTime * fadespeed;
         }
+        yield return null;
     }
 }
