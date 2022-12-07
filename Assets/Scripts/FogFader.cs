@@ -1,54 +1,31 @@
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.Rendering.HighDefinition;
 using System.Collections;
 
 public class FogFader : MonoBehaviour
 {
-    public VolumeProfile cheems;
-    public bool enableFog;
-    public bool overrideFog;
-    public bool start;
     public float fadespeed;
-    //sets fog attenuation distance to 3 on Run
+    public LocalVolumetricFog monoFog;
+    public float fogStartDistance = 10f;
+    public float fogTargetDistance = 3000f;
+    float fogCurrentDistance = 10f;
+
     private void Start()
     {
-        if (cheems.TryGet<Fog>(out var fog))
-        {
-            fog.meanFreePath.value = 3;
-        }
+        fogCurrentDistance = fogStartDistance;
     }
-    //collider trigger
+    //On trigger set MonolithCoverFog Fog Distance to 3000
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform.tag == "Player")
+        if (other.transform.CompareTag("Player"))
         {
-            start = true;
+            fogCurrentDistance = Mathf.MoveTowards(fogCurrentDistance, fogTargetDistance, fadespeed * Time.deltaTime);
+            monoFog.parameters.meanFreePath = fogTargetDistance;
         }
     }
-    //set fog to 150 if below
     private void Update()
     {
-        if (cheems.TryGet<Fog>(out var fog))
-            if (start)
-            {
-                {
-                    if (fog.meanFreePath.value <= 150)
-                    {           //lul
-                        fog.meanFreePath.value = 150;
-                    }
-                }
-            }
+ 
+    }
 
-    }
-    IEnumerator Fadefog()
-    {
-        float fadeTime = 0f;
-        while (fadeTime < 1f)
-        {
-            Mathf.Clamp(fadeTime, 0f, 1f);
-            fadeTime += -Time.deltaTime * fadespeed;
-        }
-        yield return null;
-    }
 }

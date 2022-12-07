@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4832.924, g: 4959.875, b: 5941.039, a: 1}
+  m_IndirectSpecularColor: {r: 4833.83, g: 4960.633, b: 5942.0547, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -589,6 +589,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -18.908, y: 157.94, z: 0.001}
+--- !u!1 &652405651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652405652}
+  - component: {fileID: 652405653}
+  m_Layer: 0
+  m_Name: MonolithCoverFog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &652405652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652405651}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 130.2, y: 78.16, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1593238406}
+  m_Father: {fileID: 973177711}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652405653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652405651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1fbb15bf92b84f40a1eb030765b5afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+    albedo: {r: 1, g: 1, b: 1, a: 1}
+    meanFreePath: 10
+    anisotropy: 0
+    volumeMask: {fileID: 0}
+    textureScrollingSpeed: {x: 0, y: 0, z: 0}
+    textureTiling: {x: 1, y: 1, z: 1}
+    positiveFade: {x: 0.25853154, y: 0.5, z: 0.5}
+    negativeFade: {x: 0.25853154, y: 0.5, z: 0.5}
+    m_EditorUniformFade: 150
+    m_EditorPositiveFade: {x: 0, y: 0, z: 0}
+    m_EditorNegativeFade: {x: 0, y: 0, z: 0}
+    m_EditorAdvancedFade: 0
+    size: {x: 580.2, y: 300, z: 300}
+    invertFade: 0
+    distanceFadeStart: 0
+    distanceFadeEnd: 100
+    textureOffset: {x: 0, y: 0, z: 0}
+    falloffMode: 0
+  m_Version: 2
 --- !u!1 &679932489
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,8 +728,6 @@ GameObject:
   m_Component:
   - component: {fileID: 695958604}
   - component: {fileID: 695958605}
-  - component: {fileID: 695958607}
-  - component: {fileID: 695958606}
   m_Layer: 0
   m_Name: Sky and Fog Global Volume
   m_TagString: Untagged
@@ -704,36 +767,6 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   sharedProfile: {fileID: 11400000, guid: f50e0964adeca8a43b17f5dec4ee638e, type: 2}
---- !u!65 &695958606
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695958603}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 33, y: 20, z: 22.76}
-  m_Center: {x: 8.61, y: 0, z: 6.22}
---- !u!114 &695958607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 695958603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 803fb9d620e6d4d46b73f09d82401d71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fogFader: {fileID: 0}
-  cheems: {fileID: 11400000, guid: f50e0964adeca8a43b17f5dec4ee638e, type: 2}
-  enableFog: 0
-  overrideFog: 0
-  fadespeed: 0
 --- !u!1001 &733268169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1725,6 +1758,7 @@ Transform:
   - {fileID: 1236549781}
   - {fileID: 679932490}
   - {fileID: 1770740889}
+  - {fileID: 652405652}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2135,6 +2169,68 @@ MonoBehaviour:
     textureOffset: {x: 0, y: 0, z: 0}
     falloffMode: 0
   m_Version: 2
+--- !u!1 &1593238405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593238406}
+  - component: {fileID: 1593238408}
+  - component: {fileID: 1593238407}
+  m_Layer: 0
+  m_Name: MonoFogTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593238406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593238405}
+  m_LocalRotation: {x: -0, y: -0.3275159, z: -0, w: 0.9448457}
+  m_LocalPosition: {x: -120.98, y: -74.5, z: -2.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 652405652}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -38.236, z: 0}
+--- !u!114 &1593238407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593238405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 803fb9d620e6d4d46b73f09d82401d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadespeed: 0.5
+  monoFog: {fileID: 652405653}
+  fogStartDistance: 0
+  fogTargetDistance: 3000
+--- !u!65 &1593238408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593238405}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 30, z: 40}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1754195305
 PrefabInstance:
   m_ObjectHideFlags: 0
