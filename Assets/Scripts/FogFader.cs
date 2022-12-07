@@ -9,18 +9,19 @@ public class FogFader : MonoBehaviour
 	public float fogStartDistance = 10f;
 	public float fogCurrentDistance;
 	float fogTargetDistance;
+	public float fogTriggerTargetDistance;
 
 	private void Start()
 	{
 		fogCurrentDistance = fogStartDistance;
 		fogTargetDistance = fogStartDistance;
 	}
-	//On trigger set MonolithCoverFog Fog Distance to 3000
+	//On trigger set MonolithCoverFog Fog Distance to target distance
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.transform.CompareTag("Player"))
 		{
-			fogTargetDistance = 3000f;
+			fogTargetDistance = fogTriggerTargetDistance;
 			Debug.Log($"Fog Triggered");
 		}
 	}
