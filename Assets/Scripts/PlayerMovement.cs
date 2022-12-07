@@ -49,6 +49,9 @@ public class PlayerMovement : MonoBehaviour
     float horizontalInput;
     float verticalInput;
 
+    public bool flashlightOn;
+    public GameObject flashlight;
+
     Vector3 movementDirection;
 
     Rigidbody rb;
@@ -71,6 +74,9 @@ public class PlayerMovement : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        flashlightOn = false;
+        //flashlight = GameObject.Find("Flashlight");
     }
 
     private void FixedUpdate()
@@ -102,6 +108,16 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(-transform.up * 150f, ForceMode.Force);
         }
 
+        if (Input.GetKeyDown(KeyCode.F) && !flashlightOn)
+        {
+            flashlightOn = true;
+            flashlight.SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.F) && flashlightOn)
+        {
+            flashlightOn= false;
+            flashlight.SetActive(false);
+        }
 
 
     }
