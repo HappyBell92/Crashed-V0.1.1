@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4833.83, g: 4960.633, b: 5942.0547, a: 1}
+  m_IndirectSpecularColor: {r: 4826.7666, g: 4954.5723, b: 5941.9453, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2214,10 +2214,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803fb9d620e6d4d46b73f09d82401d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadespeed: 0.5
+  fadespeed: 100
   monoFog: {fileID: 652405653}
-  fogStartDistance: 0
-  fogTargetDistance: 3000
+  fogStartDistance: 10
+  fogCurrentDistance: 10
 --- !u!65 &1593238408
 BoxCollider:
   m_ObjectHideFlags: 0
