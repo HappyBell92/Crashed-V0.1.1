@@ -21,8 +21,8 @@ public class ScatterGate : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             start = true;
-            shatter.time = shatter.clip.length;
             shatter.pitch = 1;
+            shatter.time = shatter.clip.length + 0;
             shatter.Play();
         }
     }
