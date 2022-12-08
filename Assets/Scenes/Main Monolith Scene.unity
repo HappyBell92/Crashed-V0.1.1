@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 4633.544, g: 4501.3877, b: 4887.301, a: 1}
+  m_IndirectSpecularColor: {r: 4847.324, g: 4709.8223, b: 5110.996, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2128,14 +2128,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212169724}
-  m_LocalRotation: {x: 0.24184473, y: -0.66446304, z: 0.24184473, w: 0.66446304}
+  m_LocalRotation: {x: 0.25587973, y: -0.6591856, z: 0.25587973, w: 0.6591856}
   m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 973177711}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 40, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 42.43, y: -90, z: 0}
 --- !u!114 &1212169726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3482,7 +3482,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 7.29
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4358,7 +4358,7 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 1
+          time: 0.9974365
           value: 0
           inSlope: 0
           outSlope: 0
@@ -4680,15 +4680,15 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 5590
-        ctime2: 49537
+        ctime1: 1542
+        ctime2: 10601
         ctime3: 65535
         ctime4: 0
         ctime5: 0
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 31804
+        atime1: 11951
         atime2: 65535
         atime3: 65535
         atime4: 0
