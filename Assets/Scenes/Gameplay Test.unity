@@ -15858,7 +15858,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1321923825, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
       propertyPath: m_Intensity
-      value: 40000
+      value: 47517.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321923825, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
+      propertyPath: m_LightUnit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321923825, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
+      propertyPath: m_LightDimmer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321923825, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
+      propertyPath: m_LuxAtDistance
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321923825, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
+      propertyPath: m_EnableSpotReflector
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1321923825, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
       propertyPath: m_CustomSpotLightShadowCone
@@ -15866,7 +15882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1321923826, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
       propertyPath: m_Intensity
-      value: 47517.94
+      value: 115639.66
       objectReference: {fileID: 0}
     - target: {fileID: 1321923826, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
       propertyPath: m_SpotAngle

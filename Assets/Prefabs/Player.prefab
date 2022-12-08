@@ -48,7 +48,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1321923824
 Transform:
   m_ObjectHideFlags: 0
@@ -76,10 +76,10 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 14012.508
+  m_Intensity: 115639.66
   m_Range: 20
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_SpotAngle: 60
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -138,14 +138,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 3000
+  m_Intensity: 47517.94
   m_EnableSpotReflector: 1
-  m_LuxAtDistance: 1
+  m_LuxAtDistance: 1.56
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
-  m_LightUnit: 0
+  m_LightUnit: 2
   m_FadeDistance: 10000
   m_VolumetricFadeDistance: 10000
   m_AffectDiffuse: 1
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
-  m_CustomSpotLightShadowCone: 30
+  m_CustomSpotLightShadowCone: 1
   m_MaxSmoothness: 0.99
   m_ApplyRangeAttenuation: 1
   m_DisplayAreaLightEmissiveMesh: 0
@@ -416,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6568718123550322082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13002405, y: 0.7599955, z: 0.029986754}
+  m_LocalPosition: {x: 0.13002396, y: 0.7599955, z: 0.02998352}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -758,7 +758,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7091970214591821176}
   m_LocalRotation: {x: 0.07373585, y: 0.6301807, z: -0.060299657, w: 0.77058375}
-  m_LocalPosition: {x: 0.13002405, y: 0.7599955, z: 0.029986754}
+  m_LocalPosition: {x: 0.13002396, y: 0.7599955, z: 0.02998352}
   m_LocalScale: {x: 1, y: 1.1111112, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1009,6 +1009,9 @@ MonoBehaviour:
   orientation: {fileID: 8824714226382917207}
   flashlightOn: 0
   flashlight: {fileID: 1321923823}
+  pauseMenu: {fileID: 0}
+  orientationScript: {fileID: 2014426060}
+  isPaused: 0
   state: 0
 --- !u!136 &1147425171
 CapsuleCollider:

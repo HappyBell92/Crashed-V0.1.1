@@ -26,6 +26,11 @@ public class PlayerRespawn : MonoBehaviour
         death.Play();
     }
 
+    public void RespawnButton()
+    {
+        transform.position = respawnPoint;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Death")

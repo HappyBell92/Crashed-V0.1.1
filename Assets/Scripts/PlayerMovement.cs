@@ -52,6 +52,10 @@ public class PlayerMovement : MonoBehaviour
     public bool flashlightOn;
     public GameObject flashlight;
 
+    public GameObject pauseMenu;
+    public Orientationcheck orientationScript;
+    public bool isPaused;
+
     Vector3 movementDirection;
 
     Rigidbody rb;
@@ -76,7 +80,10 @@ public class PlayerMovement : MonoBehaviour
         Cursor.visible = false;
 
         flashlightOn = false;
-        //flashlight = GameObject.Find("Flashlight");
+
+        isPaused = false;
+
+        //orientationScript = GameObject.Find("Player").GetComponent<Orientationcheck>();
     }
 
     private void FixedUpdate()
@@ -102,12 +109,14 @@ public class PlayerMovement : MonoBehaviour
         else
             rb.drag = 0;
 
+        // If on a steep slope pushes player down
         if (SteepSlope())
         {
             //Debug.Log("Too Steep!");
             rb.AddForce(-transform.up * 150f, ForceMode.Force);
         }
 
+        // Flashlight
         if (Input.GetKeyDown(KeyCode.F) && !flashlightOn)
         {
             flashlightOn = true;
@@ -119,7 +128,37 @@ public class PlayerMovement : MonoBehaviour
             flashlight.SetActive(false);
         }
 
+        // Pause Menu
+        if (Input.GetKeyDown(KeyCode.Escape) && !isPaused)
+        {
+            Cursor.visible = true;
+            Time.timeScale = 0;
+            pauseMenu.SetActive(true);
+            orientationScript.enabled = false;
+            isPaused = true;
+        }
 
+        else if(Input.GetKeyDown(KeyCode.Escape) && isPaused)
+        {
+            Cursor.visible = false;
+            Time.timeScale = 1;
+            pauseMenu.SetActive(false);
+            orientationScript.enabled = true;
+            isPaused = false;
+        }
+
+        if (isPaused)
+        {
+            Cursor.visible = true;
+            Cursor.lockState= CursorLockMode.Confined;
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState= CursorLockMode.Locked;
+            Time.timeScale = 1;
+        }
     }
 
     private void MyInput()
