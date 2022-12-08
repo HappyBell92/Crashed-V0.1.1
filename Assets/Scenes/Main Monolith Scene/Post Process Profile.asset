@@ -214,7 +214,7 @@ MonoBehaviour:
     m_Value: 0
   meteringMode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 4
   luminanceSource:
     m_OverrideState: 1
     m_Value: 1
@@ -226,7 +226,7 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: -1
+    m_Value: 3.9592702
   limitMax:
     m_OverrideState: 1
     m_Value: 14
