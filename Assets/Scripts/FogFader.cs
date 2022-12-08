@@ -22,7 +22,6 @@ public class FogFader : MonoBehaviour
 		if (other.transform.CompareTag("Player"))
 		{
 			fogTargetDistance = fogTriggerTargetDistance;
-			Debug.Log($"Fog Triggered");
 		}
 	}
 	private void Update()
