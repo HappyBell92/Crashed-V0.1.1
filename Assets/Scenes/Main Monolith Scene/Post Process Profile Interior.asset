@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8294495233102720889
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f034cba68ab55e046ae1445a42f18c0e, type: 3}
+  m_Name: IndirectLightingController
+  m_EditorClassIdentifier: 
+  active: 1
+  indirectDiffuseLightingMultiplier:
+    m_OverrideState: 1
+    m_Value: 0
+  indirectDiffuseLightingLayers:
+    m_OverrideState: 1
+    m_Value: 255
+  reflectionLightingMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
+  reflectionLightingLayers:
+    m_OverrideState: 1
+    m_Value: 255
+  reflectionProbeIntensityMultiplier:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &-3204899614308715715
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -78,7 +106,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Post Process Profile 1
+  m_Name: Post Process Profile Interior
   m_EditorClassIdentifier: 
   components:
   - {fileID: 2344919758722133687}
@@ -88,6 +116,7 @@ MonoBehaviour:
   - {fileID: -2145048237724643121}
   - {fileID: 392712745475320439}
   - {fileID: 7084001245983375730}
+  - {fileID: -8294495233102720889}
 --- !u!114 &392712745475320439
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -140,7 +169,7 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: 13
+    m_Value: 10.663774
   compensation:
     m_OverrideState: 1
     m_Value: 0
