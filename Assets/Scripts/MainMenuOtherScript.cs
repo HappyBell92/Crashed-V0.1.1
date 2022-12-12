@@ -6,16 +6,15 @@ public class MainMenuOtherScript : MonoBehaviour
 {
     public bool mouseOn;
     public PhysicalPlayButton playButton;
-    public GameObject fx;
+    public GameObject ship;
     Animator playGrow;
-    Animator ship;
+    Animator shipCrash;
     // Start is called before the first frame update
     void Start()
     {
         mouseOn = false;
         playGrow = GameObject.Find("PlayPhysicalButton").GetComponent<Animator>();
-        ship = GameObject.Find("ShipObjectForMenu").GetComponent<Animator>();
-        fx.SetActive(true);
+        shipCrash = GameObject.Find("ShipObjectForMenu").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,6 +32,7 @@ public class MainMenuOtherScript : MonoBehaviour
                 if (Input.GetMouseButtonDown(0))
                 {
                     playButton.PlayGame();
+                    ship.SetActive(true);
                 }
             }
 
