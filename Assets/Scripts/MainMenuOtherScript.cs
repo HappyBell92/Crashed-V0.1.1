@@ -33,6 +33,8 @@ public class MainMenuOtherScript : MonoBehaviour
                 {
                     playButton.PlayGame();
                     ship.SetActive(true);
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
                 }
             }
 

@@ -8,6 +8,7 @@ TagManager:
   - Checkpoint
   - PlayButton
   - QuitButton
+  - Ship
   layers:
   - Default
   - TransparentFX
