@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 553.9474, g: 459.90784, b: 267.19165, a: 1}
+  m_IndirectSpecularColor: {r: 554.4302, g: 460.24854, b: 267.51904, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441482e8936e35048a1dffac814e3ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Profile: {fileID: 11400000, guid: f3e59b0a9aff0cf4089522df9e770f2f, type: 2}
+  m_Profile: {fileID: 11400000, guid: 140617cf3da3d8940b11ec18142d46c5, type: 2}
   m_StaticLightingSkyUniqueID: 4
   m_StaticLightingCloudsUniqueID: 0
   m_StaticLightingVolumetricClouds: 0
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: f3e59b0a9aff0cf4089522df9e770f2f, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 140617cf3da3d8940b11ec18142d46c5, type: 2}
 --- !u!1 &2033641041
 GameObject:
   m_ObjectHideFlags: 0
