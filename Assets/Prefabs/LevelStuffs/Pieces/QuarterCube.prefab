@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5726791989469014850}
   - component: {fileID: 863838213218411924}
   - component: {fileID: 1084505663901829906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: QuarterCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

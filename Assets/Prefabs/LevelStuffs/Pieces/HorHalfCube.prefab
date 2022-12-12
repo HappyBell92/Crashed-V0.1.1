@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2865693479863599812}
   - component: {fileID: 6900582725216350561}
   - component: {fileID: 7065079959942515756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HorHalfCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

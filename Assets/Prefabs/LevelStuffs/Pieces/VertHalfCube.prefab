@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6703331637693203519}
   - component: {fileID: 5947153964745998939}
   - component: {fileID: 8218331013484184660}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VertHalfCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

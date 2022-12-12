@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2369500862190200202}
   - component: {fileID: 4189740733971081220}
   - component: {fileID: 2657127390335728661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeirdWalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
