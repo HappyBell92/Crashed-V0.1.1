@@ -14343,6 +14343,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2228417370725966487, guid: 7092ca6a90cb58444b3f260a497a03b3, type: 3}
+--- !u!1001 &9128934519076921678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.4719
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 570569528951971768, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_Name
+      value: Electricity Test
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2cd08fefe5c8db848906359d92c0dcf9, type: 3}
 --- !u!1 &9209230116554277223
 GameObject:
   m_ObjectHideFlags: 0
