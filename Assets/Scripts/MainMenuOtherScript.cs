@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuOtherScript : MonoBehaviour
 {
@@ -8,12 +9,14 @@ public class MainMenuOtherScript : MonoBehaviour
     public PhysicalPlayButton playButton;
     public GameObject ship;
     Animator playGrow;
+    Animator quitGrow;
     Animator shipCrash;
     // Start is called before the first frame update
     void Start()
     {
         mouseOn = false;
-        playGrow = GameObject.Find("PlayPhysicalButton").GetComponent<Animator>();
+        playGrow = GameObject.Find("PlayButton").GetComponent<Animator>();
+        quitGrow = GameObject.Find("QuitButton").GetComponent<Animator>();
         shipCrash = GameObject.Find("ShipObjectForMenu").GetComponent<Animator>();
     }
 
@@ -31,6 +34,8 @@ public class MainMenuOtherScript : MonoBehaviour
                 playGrow.SetBool("mouseOn", true);
                 if (Input.GetMouseButtonDown(0))
                 {
+                    playGrow.SetBool("CutsceneOn", true);
+                    quitGrow.SetBool("CutsceneOn", true);
                     playButton.PlayGame();
                     ship.SetActive(true);
                     Cursor.lockState = CursorLockMode.Locked;
@@ -52,6 +57,23 @@ public class MainMenuOtherScript : MonoBehaviour
                 }
             }
             Debug.Log(hit.transform.name);
+
+            if(hit.transform.tag == "QuitButton")
+            {
+                mouseOn = true;
+                quitGrow.SetBool("mouseOn", true);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("Quitting Game");
+                    Application.Quit();
+                }
+            }
+
+            if (hit.transform.tag != "QuitButton")
+            {
+                mouseOn = false;
+                quitGrow.SetBool("mouseOn", false);
+            }
         }
     }
 }
