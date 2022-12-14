@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuOtherScript : MonoBehaviour
 {
@@ -8,12 +9,18 @@ public class MainMenuOtherScript : MonoBehaviour
     public PhysicalPlayButton playButton;
     public GameObject ship;
     Animator playGrow;
+    Animator quitGrow;
     Animator shipCrash;
+    Animator fire;
+    Animator quitFire;
     // Start is called before the first frame update
     void Start()
     {
         mouseOn = false;
-        playGrow = GameObject.Find("PlayPhysicalButton").GetComponent<Animator>();
+        playGrow = GameObject.Find("PlayButton").GetComponent<Animator>();
+        quitGrow = GameObject.Find("QuitButton").GetComponent<Animator>();
+        fire = GameObject.Find("MenuLightOpen").GetComponent<Animator>();
+        quitFire = GameObject.Find("MenuLightQuit").GetComponent<Animator>();
         shipCrash = GameObject.Find("ShipObjectForMenu").GetComponent<Animator>();
     }
 
@@ -29,8 +36,11 @@ public class MainMenuOtherScript : MonoBehaviour
             {
                 mouseOn = true;
                 playGrow.SetBool("mouseOn", true);
+                fire.SetBool("mouseOn", true);
                 if (Input.GetMouseButtonDown(0))
                 {
+                    playGrow.SetBool("CutsceneOn", true);
+                    quitGrow.SetBool("CutsceneOn", true);
                     playButton.PlayGame();
                     ship.SetActive(true);
                     Cursor.lockState = CursorLockMode.Locked;
@@ -42,16 +52,30 @@ public class MainMenuOtherScript : MonoBehaviour
             {
                 mouseOn = false;
                 playGrow.SetBool("mouseOn", false);
+                fire.SetBool("mouseOn", false);
             }
 
-                if (hit.transform.tag == "QuitButton")
+        }
+
+        Debug.Log(hit.transform.name);
+
+        if(hit.transform.tag == "QuitButton")
+        {
+            mouseOn = true;
+            quitGrow.SetBool("mouseOn", true);
+            quitFire.SetBool("mouseOn", true);
+            if (Input.GetMouseButtonDown(0))
             {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    playButton.QuitGame();
-                }
+                Debug.Log("Quitting Game");
+                Application.Quit();
             }
-            Debug.Log(hit.transform.name);
+        }
+
+        if (hit.transform.tag != "QuitButton")
+        {
+            mouseOn = false;
+            quitGrow.SetBool("mouseOn", false);
+            quitFire.SetBool("mouseOn", false);
         }
     }
 }
