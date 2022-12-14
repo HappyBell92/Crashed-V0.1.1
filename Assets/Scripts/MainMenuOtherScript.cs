@@ -13,6 +13,7 @@ public class MainMenuOtherScript : MonoBehaviour
     Animator shipCrash;
     Animator fire;
     Animator quitFire;
+    Animator soundFade;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class MainMenuOtherScript : MonoBehaviour
         fire = GameObject.Find("MenuLightOpen").GetComponent<Animator>();
         quitFire = GameObject.Find("MenuLightQuit").GetComponent<Animator>();
         shipCrash = GameObject.Find("ShipObjectForMenu").GetComponent<Animator>();
+        soundFade = GameObject.Find("MainMenuMusic").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,9 +41,9 @@ public class MainMenuOtherScript : MonoBehaviour
                 fire.SetBool("mouseOn", true);
                 if (Input.GetMouseButtonDown(0))
                 {
+                    soundFade.SetBool("CutsceneOn", true);
                     playGrow.SetBool("CutsceneOn", true);
                     quitGrow.SetBool("CutsceneOn", true);
-                    playButton.PlayGame();
                     ship.SetActive(true);
                     Cursor.lockState = CursorLockMode.Locked;
                     Cursor.visible = false;
