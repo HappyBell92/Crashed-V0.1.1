@@ -9,6 +9,8 @@ TagManager:
   - PlayButton
   - QuitButton
   - Ship
+  - Sand
+  - Stone
   layers:
   - Default
   - TransparentFX

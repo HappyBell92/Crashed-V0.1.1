@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 476.15527, g: 527.5227, b: 619.3037, a: 1}
+  m_IndirectSpecularColor: {r: 463.92303, g: 512.8855, b: 618.0845, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1490,7 +1490,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: deceea8a9aa248340b01c885ca5a15ef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.81
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -14343,6 +14343,75 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2228417370725966487, guid: 7092ca6a90cb58444b3f260a497a03b3, type: 3}
+--- !u!1001 &9128934519076921678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.4719
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 541553148291745416, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 570569528951971768, guid: 2cd08fefe5c8db848906359d92c0dcf9,
+        type: 3}
+      propertyPath: m_Name
+      value: Electricity Test
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2cd08fefe5c8db848906359d92c0dcf9, type: 3}
 --- !u!1 &9209230116554277223
 GameObject:
   m_ObjectHideFlags: 0
