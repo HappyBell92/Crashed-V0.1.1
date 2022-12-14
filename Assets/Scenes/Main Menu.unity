@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 554.4282, g: 460.2456, b: 267.51953, a: 1}
+  m_IndirectSpecularColor: {r: 554.438, g: 460.25537, b: 267.5205, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1938,6 +1938,7 @@ MonoBehaviour:
   mouseOn: 0
   playButton: {fileID: 1910197997}
   ship: {fileID: 1721770028}
+  soundFade: {fileID: 1442702983}
 --- !u!1 &1095397328
 GameObject:
   m_ObjectHideFlags: 0

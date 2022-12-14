@@ -13,7 +13,7 @@ public class MainMenuOtherScript : MonoBehaviour
     Animator shipCrash;
     Animator fire;
     Animator quitFire;
-    Animator soundFade;
+    public Animator soundFade;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,6 @@ public class MainMenuOtherScript : MonoBehaviour
         fire = GameObject.Find("MenuLightOpen").GetComponent<Animator>();
         quitFire = GameObject.Find("MenuLightQuit").GetComponent<Animator>();
         shipCrash = GameObject.Find("ShipObjectForMenu").GetComponent<Animator>();
-        soundFade = GameObject.Find("MainMenuMusic").GetComponent<Animator>();
     }
 
     // Update is called once per frame
