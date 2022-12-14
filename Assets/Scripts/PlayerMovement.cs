@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     
 
     public float groundDrag;
-    public float gorundCheck = 0.3f;
+    public float groundCheck = 0.3f;
 
     public float jumpForce;
     public float jumpCooldown;
@@ -37,6 +37,12 @@ public class PlayerMovement : MonoBehaviour
     private RaycastHit slopeHit;
     private bool exitingSlope;
 
+    [Header("Sounds")]
+    public AudioSource walkSand;
+    public AudioSource walkStone;
+    public AudioSource jumpSand;
+    public AudioSource jumpStone;
+
     public Camera playerCamera;
     float maxVelocityChange = 10.0f;
 
@@ -55,6 +61,9 @@ public class PlayerMovement : MonoBehaviour
     public GameObject pauseMenu;
     public Orientationcheck orientationScript;
     public bool isPaused;
+
+    public bool onSand;
+    public bool onStone;
 
     Vector3 movementDirection;
 
@@ -89,14 +98,69 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+
+        //Ray ray = new Ray(transform.position, -transform.up);
+        //RaycastHit hit;
+
+        //if (Physics.Raycast(ray, out hit, playerHeight * 0.5f, WhatIsGround))
+        //{
+        //    Debug.DrawRay(transform.position, -transform.up * playerHeight * 0.5f, Color.yellow);
+        //    if (hit.transform.tag == "Sand")
+        //    {
+        //        onSand = true;
+        //    }
+
+        //    else
+        //    {
+        //        onSand = false;
+        //    }
+
+        //    if(hit.transform.tag == "Stone")
+        //    {
+        //        onStone = true;
+        //    }
+
+        //    else
+        //    {
+        //        onStone = false;
+        //    }
+        //}
     }
 
     // Update is called once per frame
     void Update()
     {
         // Ground Check
-        grounded = Physics.Raycast(transform.position, -transform.up, playerHeight * 0.5f + gorundCheck, WhatIsGround);
-        Debug.DrawRay(transform.position, -transform.up, Color.green, Time.deltaTime);
+        grounded = Physics.Raycast(transform.position, -transform.up, playerHeight * 0.5f + groundCheck, WhatIsGround);
+        //Debug.DrawRay(transform.position, -transform.up, Color.green, Time.deltaTime);
+
+        // ground material check
+        Ray ray = new Ray(transform.position, -transform.up);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, playerHeight * 0.5f, WhatIsGround))
+        {
+            Debug.DrawRay(transform.position, -transform.up * playerHeight * 0.5f, Color.yellow);
+            if (hit.transform.tag == "Sand")
+            {
+                onSand = true;
+            }
+
+            else
+            {
+                onSand = false;
+            }
+
+            if (hit.transform.tag == "Stone")
+            {
+                onStone = true;
+            }
+
+            else
+            {
+                onStone = false;
+            }
+        }
 
         MyInput();
         SpeedControl();
@@ -159,6 +223,8 @@ public class PlayerMovement : MonoBehaviour
             Cursor.lockState= CursorLockMode.Locked;
             Time.timeScale = 1;
         }
+
+
     }
 
     private void MyInput()
@@ -247,6 +313,11 @@ public class PlayerMovement : MonoBehaviour
         velocityChange = transform.TransformDirection(velocityChange);
 
         rb.AddForce(velocityChange, ForceMode.VelocityChange);
+
+        if(rb.velocity.sqrMagnitude > 2f && grounded)
+        {
+
+        }
 
 
         //In air

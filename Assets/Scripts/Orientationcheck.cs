@@ -14,8 +14,6 @@ public class Orientationcheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(transform.position, -transform.up, Color.red, Time.deltaTime);
-
         turn.y += Input.GetAxis("Mouse X");
         transform.localRotation = Quaternion.Euler(0, turn.y, 0);
     }
