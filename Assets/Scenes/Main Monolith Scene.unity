@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 477.04517, g: 528.1211, b: 617.7554, a: 1}
+  m_IndirectSpecularColor: {r: 463.92303, g: 512.8855, b: 618.0845, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -788,23 +788,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4539323361735606677, guid: cbdd25a8c9fb3b74c978646c953aebb8,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4539323361735606677, guid: cbdd25a8c9fb3b74c978646c953aebb8,
-        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 4539323361735606678, guid: cbdd25a8c9fb3b74c978646c953aebb8,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 778.88904
-      objectReference: {fileID: 0}
-    - target: {fileID: 4539323361735606679, guid: cbdd25a8c9fb3b74c978646c953aebb8,
-        type: 3}
-      propertyPath: m_Intensity
-      value: 9787.809
       objectReference: {fileID: 0}
     - target: {fileID: 4539323362865801474, guid: cbdd25a8c9fb3b74c978646c953aebb8,
         type: 3}
@@ -1505,7 +1490,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: deceea8a9aa248340b01c885ca5a15ef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.81
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2947,14 +2932,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807851756}
-  m_LocalRotation: {x: 0.0731247, y: -0.47183546, z: -0.0392824, w: -0.8777704}
-  m_LocalPosition: {x: 66.549835, y: -8.948427, z: 3.0436647}
+  m_LocalRotation: {x: 0.14057086, y: -0.51021075, z: -0.0849621, w: -0.8442194}
+  m_LocalPosition: {x: 1.3947201, y: -7.9141397, z: -11.735843}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 87141064}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 13.45, y: 62.294, z: 0.001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &822861607
 GameObject:
   m_ObjectHideFlags: 19
