@@ -10,13 +10,13 @@ public class InteriorSceneSwitch : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(collider other)
+    private void OnTriggerEnter(Collider other)
 
     {
         if (other.transform.tag == "Player")
         {
-            SceneManagemer.LoadScene (sceneName :"")
-            DebugLog.("yee");
+            SceneManager.LoadScene(sceneName: "Interior Levels");
+            Debug.Log("yee");
         }
     }
 
