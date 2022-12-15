@@ -16,6 +16,8 @@ public class CameraX : MonoBehaviour
     void Update()
     {
         turn.x += Input.GetAxis("Mouse Y");
+        turn.x = Mathf.Clamp(turn.x, -90, 90);
         transform.localRotation = Quaternion.Euler(-turn.x, 0, 0 * Time.deltaTime);
+        Debug.Log(Input.GetAxis("Mouse Y"));
     }
 }

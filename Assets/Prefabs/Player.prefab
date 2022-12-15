@@ -76,7 +76,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 115639.66
+  m_Intensity: 40000
   m_Range: 20
   m_SpotAngle: 60
   m_InnerSpotAngle: 1
@@ -138,9 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 47517.94
+  m_Intensity: 40000
   m_EnableSpotReflector: 1
-  m_LuxAtDistance: 1.56
+  m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 6532829669900811570}
   - component: {fileID: 3349583129851328293}
   - component: {fileID: 2821388068367468701}
+  - component: {fileID: 2975175576341968467}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -599,6 +600,19 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &2975175576341968467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6568718123550322082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8cd8acaa646b46b312c819eb1be72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 0
 --- !u!1 &6922640193788150242
 GameObject:
   m_ObjectHideFlags: 0
