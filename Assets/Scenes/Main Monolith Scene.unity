@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 476.77014, g: 528.09644, b: 618.84424, a: 1}
+  m_IndirectSpecularColor: {r: 476.4248, g: 527.82983, b: 619.166, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1650,7 +1650,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: deceea8a9aa248340b01c885ca5a15ef, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.81
+  m_Volume: 0.847
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1658,8 +1658,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 114.62692
-  MaxDistance: 1000
+  MinDistance: 20
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -1694,7 +1694,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -2644,18 +2644,18 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b8e050f08ac816f4e9404e61788fc052, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.919
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
+  DopplerLevel: 0
+  MinDistance: 7.073524
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4764,7 +4764,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7cb3a6022995b1a44bff6d9134cfbccc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.81
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4772,8 +4772,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 179.25119
-  MaxDistance: 1000
+  MinDistance: 15
+  MaxDistance: 180
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -4808,7 +4808,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
