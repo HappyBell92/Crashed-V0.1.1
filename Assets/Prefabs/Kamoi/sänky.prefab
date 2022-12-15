@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!4 &637047662202590196
 Transform:
@@ -158,10 +158,35 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e96d28bffeba4724b8e25dfe302be003, type: 2}
+    - target: {fileID: -2667176552390280021, guid: 7add96c069b3d124db7a916c0d27971c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: -596048074918723611, guid: 7add96c069b3d124db7a916c0d27971c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7add96c069b3d124db7a916c0d27971c,
         type: 3}
       propertyPath: m_Name
       value: sanky_patjalla
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7add96c069b3d124db7a916c0d27971c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121416118950446243, guid: 7add96c069b3d124db7a916c0d27971c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2094621637160172482, guid: 7add96c069b3d124db7a916c0d27971c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 3188465342121396430, guid: 7add96c069b3d124db7a916c0d27971c,
         type: 3}
@@ -178,6 +203,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 81ef76dd1a42d884db2bf75ef0033c7c, type: 2}
+    - target: {fileID: 6757552168543227448, guid: 7add96c069b3d124db7a916c0d27971c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7088230428113336859, guid: 7add96c069b3d124db7a916c0d27971c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

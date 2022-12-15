@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!4 &8806649705455306457
 Transform:
@@ -135,11 +135,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: pieni_poyta
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 67ee9d103a0346442ba7237f0ba67b9b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5452051539558217847, guid: 67ee9d103a0346442ba7237f0ba67b9b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0ccd1c15d21b15744ab1db5b0ea48abd, type: 2}
+    - target: {fileID: 8119197081016688595, guid: 67ee9d103a0346442ba7237f0ba67b9b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67ee9d103a0346442ba7237f0ba67b9b, type: 3}
 --- !u!4 &5967450606067259122 stripped

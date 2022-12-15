@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!4 &5651264519166039825
 Transform:
@@ -159,10 +159,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 8d665f788faee9345a011cfe366f5fdd, type: 2}
+    - target: {fileID: -4096675045254571782, guid: 7bcdf83c3e734f94f893c0c405d462cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: -2096885211680614102, guid: 7bcdf83c3e734f94f893c0c405d462cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7bcdf83c3e734f94f893c0c405d462cf,
         type: 3}
       propertyPath: m_Name
       value: gamertuoli
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7bcdf83c3e734f94f893c0c405d462cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 4806823982101981892, guid: 7bcdf83c3e734f94f893c0c405d462cf,
         type: 3}
@@ -184,6 +199,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f4e77e2b4d36d8e46b4f0b8af4e545be, type: 2}
+    - target: {fileID: 6757552168543227448, guid: 7bcdf83c3e734f94f893c0c405d462cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956697670789471845, guid: 7bcdf83c3e734f94f893c0c405d462cf,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bcdf83c3e734f94f893c0c405d462cf, type: 3}
 --- !u!4 &1054221879513818167 stripped

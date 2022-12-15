@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!4 &4008709250920804284
 Transform:
@@ -130,6 +130,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 521b36751b3283945bf7d72dd6678a8e, type: 2}
+    - target: {fileID: -6361774762833511496, guid: 1e0ed06298cf20045bc03c0759f83a08,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: -3116102887668025606, guid: 1e0ed06298cf20045bc03c0759f83a08,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -144,6 +149,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: kasvi
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e0ed06298cf20045bc03c0759f83a08,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4438598022027498063, guid: 1e0ed06298cf20045bc03c0759f83a08,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e0ed06298cf20045bc03c0759f83a08, type: 3}

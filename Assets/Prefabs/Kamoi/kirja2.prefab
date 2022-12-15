@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!4 &8708410657686491130
 Transform:
@@ -140,6 +140,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8d665f788faee9345a011cfe366f5fdd, type: 2}
+    - target: {fileID: -6219182548764675593, guid: 8dac456ea76528146b84cc38dc559946,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: -419012471934483944, guid: 8dac456ea76528146b84cc38dc559946,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -149,6 +154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: kirja2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8dac456ea76528146b84cc38dc559946,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dac456ea76528146b84cc38dc559946, type: 3}

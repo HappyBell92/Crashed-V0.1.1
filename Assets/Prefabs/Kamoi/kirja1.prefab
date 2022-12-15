@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!4 &5596305450574186517
 Transform:
@@ -139,6 +139,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: kirja1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 532361a4e08699240ba55aface870f56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666815782403904626, guid: 532361a4e08699240ba55aface870f56,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 532361a4e08699240ba55aface870f56, type: 3}

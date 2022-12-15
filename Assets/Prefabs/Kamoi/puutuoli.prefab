@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!4 &8416658679804550362
 Transform:
@@ -149,11 +149,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: puutuoli
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2cca00dd00fccac4fa14f8ebda76aabe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5899008078487149538, guid: 2cca00dd00fccac4fa14f8ebda76aabe,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d0b91d240099d104b9eba5d7640b1ff2, type: 2}
+    - target: {fileID: 6757552168543227448, guid: 2cca00dd00fccac4fa14f8ebda76aabe,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cca00dd00fccac4fa14f8ebda76aabe, type: 3}
 --- !u!4 &6853376567618866784 stripped
