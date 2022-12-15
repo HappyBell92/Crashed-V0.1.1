@@ -6369,16 +6369,76 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1761488754521008217, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488754717952658, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488754875245201, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755034989776, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1761488755047825753, guid: 478e88dc20f23f44faa55ac13828603f,
         type: 3}
       propertyPath: gravityBehaviourScript
       value: 
       objectReference: {fileID: 336064390}
+    - target: {fileID: 1761488755148831465, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755212773432, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755215580230, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755243270290, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755326024709, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755326024709, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1761488755499530853, guid: 478e88dc20f23f44faa55ac13828603f,
         type: 3}
       propertyPath: gravityBehaviourScript
       value: 
       objectReference: {fileID: 336064390}
+    - target: {fileID: 1761488755543888882, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755562597497, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1761488755614933777, guid: 478e88dc20f23f44faa55ac13828603f,
         type: 3}
       propertyPath: m_RootOrder
@@ -6445,11 +6505,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: MediumRoom_joel
       objectReference: {fileID: 0}
+    - target: {fileID: 1761488755653308123, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755700898890, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755797602468, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755834379824, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488755960327304, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488756064508168, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761488756198896203, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1761488756206134460, guid: 478e88dc20f23f44faa55ac13828603f,
         type: 3}
       propertyPath: gravityBehaviourScript
       value: 
       objectReference: {fileID: 336064390}
+    - target: {fileID: 1761488756302669702, guid: 478e88dc20f23f44faa55ac13828603f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478e88dc20f23f44faa55ac13828603f, type: 3}
 --- !u!1001 &5235139950263931036
