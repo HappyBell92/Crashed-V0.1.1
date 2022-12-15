@@ -31,17 +31,17 @@ public class ScatterGate : MonoBehaviour
     {
         if (start)
         {
-            if (blend <= 100)
+            if (blend <= 100f)
             {
-                blend += blendSpeed;
+                blend += blendSpeed * Time.deltaTime;
                 meshRenderer.SetBlendShapeWeight(0, Mathf.Clamp(blend, 0f, 100f));
             }
         }
         if (!start)
         {
-            if (blend >= 0)
+            if (blend >= 0f)
             {
-                blend -= blendSpeed;
+                blend -= blendSpeed * Time.deltaTime;
                 meshRenderer.SetBlendShapeWeight(0, Mathf.Clamp(blend, 0, 100));
             }
 
