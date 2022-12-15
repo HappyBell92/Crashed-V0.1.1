@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 
-		flashlightOn = false;
+		flashlightOn = true;
 
 		isPaused = false;
 
