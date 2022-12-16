@@ -33,8 +33,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 0b2cae3d24875e741bd67fb084d1e778, type: 3}
-        m_Scale: {x: 0.15, y: 0.11}
+        m_Texture: {fileID: 2800000, guid: 111cb8b68d0609445be91fd90c302bd5, type: 3}
+        m_Scale: {x: 0.08, y: -0.08}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
         m_Texture: {fileID: 0}
@@ -69,8 +69,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0b2cae3d24875e741bd67fb084d1e778, type: 3}
-        m_Scale: {x: 0.15, y: 0.11}
+        m_Texture: {fileID: 2800000, guid: 111cb8b68d0609445be91fd90c302bd5, type: 3}
+        m_Scale: {x: 0.08, y: -0.08}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
         m_Texture: {fileID: 0}
@@ -172,7 +172,7 @@ Material:
     - _HeightPoMAmplitude: 2
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
-    - _InvTilingScale: 7.6923075
+    - _InvTilingScale: 12.5
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
@@ -232,9 +232,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 1, g: 0.36320752, b: 0.4749126, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.3632075, b: 0.47491258, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
