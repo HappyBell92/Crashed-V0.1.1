@@ -2454,7 +2454,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c9865070fe6bfd14ab58bf8d92af9685, type: 2}
+      objectReference: {fileID: 2100000, guid: ae3a4d01fb316f3479d777a7be0e13d8, type: 2}
     - target: {fileID: 919132149155446097, guid: 247ab1cd55024724ea9379fdea654f28,
         type: 3}
       propertyPath: m_Name
@@ -8156,7 +8156,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fb71b09ca772e5c4dac680501b272225,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5166135
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb71b09ca772e5c4dac680501b272225,
         type: 3}
@@ -12276,7 +12276,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.54, y: 2.72, z: 10.15}
-  m_Center: {x: 3.01, y: 0, z: 0}
+  m_Center: {x: 3.93, y: 1.25, z: 0}
 --- !u!4 &1930748954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2803103587500536409, guid: 30482da9d7b93a040a5437409fa7ca48,
@@ -18884,7 +18884,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c9865070fe6bfd14ab58bf8d92af9685, type: 2}
+  - {fileID: 2100000, guid: 5d00a08d38de5654b875e674328a47cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
