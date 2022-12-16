@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
-using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class TeleportScript : MonoBehaviour
