@@ -145,7 +145,7 @@ public class PlayerMovement : MonoBehaviour
 		Debug.DrawRay(transform.position, -transform.up * playerHeight * 0.51f, Color.yellow);
 		if (Physics.Raycast(ray, out hit, playerHeight * 0.51f, WhatIsGround))
 		{
-			Debug.Log("hit: "+hit.transform.tag);
+			//Debug.Log("hit: "+hit.transform.tag);
 			if (hit.transform.tag == "Sand")
 			{
 				onSand = true;
