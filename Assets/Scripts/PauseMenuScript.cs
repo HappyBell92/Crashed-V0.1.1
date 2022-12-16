@@ -9,6 +9,7 @@ public class PauseMenuScript : MonoBehaviour
     private PlayerRespawn respawnScript;
     private PlayerMovement getPausedBool;
     private Orientationcheck orientationScript;
+    public CameraX cameraX;
 
 
     // Start is called before the first frame update
@@ -17,6 +18,7 @@ public class PauseMenuScript : MonoBehaviour
         respawnScript = GameObject.Find("Player").GetComponent<PlayerRespawn>();
         getPausedBool = GameObject.Find("Player").GetComponent<PlayerMovement>();
         orientationScript = GameObject.Find("Orientation").GetComponent<Orientationcheck>();
+        cameraX = GameObject.Find("PlayerCamera").GetComponent<CameraX>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class PauseMenuScript : MonoBehaviour
         Cursor.visible = false;
         getPausedBool.isPaused = false;
         orientationScript.enabled = true;
+        cameraX.enabled = true;
         pauseMenu.SetActive(false);
     }
 

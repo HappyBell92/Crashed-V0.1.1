@@ -1358,6 +1358,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   orientationScript: {fileID: 2014426060}
   isPaused: 0
+  cameraScript: {fileID: 2975175576341968467}
   onSand: 0
   onStone: 0
   state: 0

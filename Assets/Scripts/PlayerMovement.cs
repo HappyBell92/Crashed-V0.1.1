@@ -60,7 +60,9 @@ public class PlayerMovement : MonoBehaviour
 
 	public GameObject pauseMenu;
 	public Orientationcheck orientationScript;
-	public bool isPaused;
+    public bool isPaused;
+    public CameraX cameraScript;
+	
 
 	Animator playerAnim;
 
@@ -204,6 +206,7 @@ public class PlayerMovement : MonoBehaviour
 			Time.timeScale = 0;
 			pauseMenu.SetActive(true);
 			orientationScript.enabled = false;
+			cameraScript.enabled = false;
 			isPaused = true;
 		}
 
@@ -212,6 +215,7 @@ public class PlayerMovement : MonoBehaviour
 			Cursor.visible = false;
 			Time.timeScale = 1;
 			pauseMenu.SetActive(false);
+			cameraScript.enabled = true;
 			orientationScript.enabled = true;
 			isPaused = false;
 		}
