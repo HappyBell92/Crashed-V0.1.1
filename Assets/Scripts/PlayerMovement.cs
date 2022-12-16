@@ -62,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
 	public Orientationcheck orientationScript;
 	public bool isPaused;
 
+	Animator playerAnim;
+
 	public bool onSand;
 	public bool onStone;
 
@@ -91,6 +93,8 @@ public class PlayerMovement : MonoBehaviour
 		flashlightOn = true;
 
 		isPaused = false;
+
+		playerAnim = GameObject.Find("Player").GetComponent<Animator>();
 
 		//orientationScript = GameObject.Find("Player").GetComponent<Orientationcheck>();
 	}
@@ -317,7 +321,11 @@ public class PlayerMovement : MonoBehaviour
 
 		if(rb.velocity.sqrMagnitude > 2f && grounded)
 		{
-
+			playerAnim.SetBool("Walking", true);
+		}
+		else
+		{
+			playerAnim.SetBool("Walking", false);
 		}
 
 
@@ -405,5 +413,18 @@ public class PlayerMovement : MonoBehaviour
 	private Vector3 GetSlopeMoveDirection()
 	{
 		return Vector3.ProjectOnPlane(movementDirection, slopeHit.normal).normalized;
+	}
+
+	public void WalkSounds()
+	{
+		if (onSand)
+		{
+			walkSand.Play();
+		}
+
+		if (onStone)
+		{
+			walkStone.Play();
+		}
 	}
 }
