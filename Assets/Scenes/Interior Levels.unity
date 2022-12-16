@@ -450,6 +450,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 727485912, guid: eb60ae6b1f988d744af9462fdb8253dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 211812322}
+    - target: {fileID: 727485912, guid: eb60ae6b1f988d744af9462fdb8253dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResumeButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656984058, guid: eb60ae6b1f988d744af9462fdb8253dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 211812322}
+    - target: {fileID: 1656984058, guid: eb60ae6b1f988d744af9462fdb8253dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheckpointButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2072752359, guid: eb60ae6b1f988d744af9462fdb8253dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 211812322}
+    - target: {fileID: 2072752359, guid: eb60ae6b1f988d744af9462fdb8253dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenuButton
+      objectReference: {fileID: 0}
     - target: {fileID: 3988663822301828020, guid: eb60ae6b1f988d744af9462fdb8253dd,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1313,7 +1337,6 @@ MonoBehaviour:
   m_Script: {fileID: 1000624265}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &159445014
 Transform:
   m_ObjectHideFlags: 19
@@ -4833,6 +4856,10 @@ PrefabInstance:
       propertyPath: south
       value: 
       objectReference: {fileID: 1359078293}
+    - target: {fileID: 1897913910, guid: 3e01c607a8bbd4b4bbd92d917e8650fa, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1087510173}
     - target: {fileID: 3903808112152820111, guid: 3e01c607a8bbd4b4bbd92d917e8650fa,
         type: 3}
       propertyPath: m_RootOrder
