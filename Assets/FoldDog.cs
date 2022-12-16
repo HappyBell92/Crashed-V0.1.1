@@ -2,33 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoldDog : MonoBehaviour, IInteractable
+public class FoldDog : MonoBehaviour
 
 {
-    [SerializeField] private string prompt;
-    public string InteractionPromp => prompt;
     public Animator foldDog;
 
-    public bool Interact(Interactor interactor)
-    {
-        Debug.Log("Yee");
-        FooldDog();
-        return true;
-    }
+
     // Start is called before the first frame update
     void Start()
     {
         
     }
+private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("Player"))
+            foldDog.SetBool("DogTrigger 0", true);
+            Debug.Log("Yee");
+    }
+
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    private void FooldDog()
-    {
-        foldDog.SetBool("Interact", true);
     }
 }
