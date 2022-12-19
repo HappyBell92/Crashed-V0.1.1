@@ -12,6 +12,7 @@ public class DogosceneTrigger : MonoBehaviour
 	[SerializeField] LayerMask playerLayerMask;
 	[SerializeField] Image fadeToBlackImage;
 	[SerializeField] GameObject thankYouText;
+	[SerializeField] GameObject mainMenuButton;
 	[SerializeField] Color transparent;
 	[SerializeField] Color black;
 	[SerializeField] float triggerHeight;
@@ -76,6 +77,7 @@ public class DogosceneTrigger : MonoBehaviour
 		if(dogGotPet)
 		{
 			thankYouText.SetActive(true);
+			mainMenuButton.SetActive(true);
 			fadeToBlackImage.color = Color.Lerp(transparent, black, timer);
 			if(timer < 1f)
 			{
@@ -117,5 +119,5 @@ public class DogosceneTrigger : MonoBehaviour
 		//Debug.Log($"Dog Got Pet got called!");
 		timer = 0;
 		dogGotPet = true;
-	} 
+	}
 }

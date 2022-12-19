@@ -43,6 +43,7 @@ public class PauseMenuScript : MonoBehaviour
         Cursor.visible = false;
         getPausedBool.isPaused = false;
         orientationScript.enabled = true;
+        cameraX.enabled = true;
         pauseMenu.SetActive(false);
         respawnScript.RespawnButton();
     }
