@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4636861536373792687}
   - component: {fileID: 6197068189366165074}
   - component: {fileID: 6505045202305301589}
-  - component: {fileID: 5455142870768846796}
   m_Layer: 0
   m_Name: sohva
   m_TagString: Untagged
@@ -89,22 +88,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4329495, y: 0.69797564, z: 0.33576828}
   m_Center: {x: -0.060467005, y: 0.6585833, z: -0.29853836}
---- !u!54 &5455142870768846796
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8415182195514426560}
-  serializedVersion: 2
-  m_Mass: 70
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &3507801426914739878
 PrefabInstance:
   m_ObjectHideFlags: 0
